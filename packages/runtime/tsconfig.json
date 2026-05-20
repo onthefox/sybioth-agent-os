@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist", "rootDir": "./src",
+    "paths": {
+      "@sybioth/errors": ["../errors/src"], "@sybioth/config": ["../config/src"],
+      "@sybioth/logger": ["../logger/src"], "@sybioth/types": ["../types/src"],
+      "@sybioth/utils": ["../utils/src"], "@sybioth/event-bus": ["../event-bus/src"],
+      "@sybioth/memory": ["../memory/src"], "@sybioth/entropy": ["../entropy/src"],
+      "@sybioth/protocol": ["../protocol/src"], "@sybioth/hooks": ["../hooks/src"],
+      "@sybioth/healing": ["../healing/src"], "@sybioth/skills": ["../skills/src"],
+      "@sybioth/agents": ["../agents/src"], "@sybioth/spawner": ["../spawner/src"],
+      "@sybioth/monitoring": ["../monitoring/src"], "@sybioth/efficiency": ["../efficiency/src"],
+      "@sybioth/alignment": ["../alignment/src"], "@sybioth/ledger": ["../ledger/src"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../errors" }, { "path": "../config" }, { "path": "../logger" },
+    { "path": "../types" }, { "path": "../utils" }, { "path": "../event-bus" },
+    { "path": "../memory" }, { "path": "../entropy" }, { "path": "../protocol" },
+    { "path": "../hooks" }, { "path": "../healing" }, { "path": "../skills" },
+    { "path": "../agents" }, { "path": "../spawner" }, { "path": "../monitoring" },
+    { "path": "../efficiency" }, { "path": "../alignment" }, { "path": "../ledger" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@sybioth/runtime",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" } },
+  "scripts": { "build": "tsc --build", "typecheck": "tsc --noEmit", "clean": "rm -rf dist" },
+  "dependencies": {
+    "@sybioth/errors": "workspace:*",
+    "@sybioth/config": "workspace:*",
+    "@sybioth/logger": "workspace:*",
+    "@sybioth/types": "workspace:*",
+    "@sybioth/utils": "workspace:*",
+    "@sybioth/event-bus": "workspace:*",
+    "@sybioth/memory": "workspace:*",
+    "@sybioth/entropy": "workspace:*",
+    "@sybioth/protocol": "workspace:*",
+    "@sybioth/hooks": "workspace:*",
+    "@sybioth/healing": "workspace:*",
+    "@sybioth/skills": "workspace:*",
+    "@sybioth/agents": "workspace:*",
+    "@sybioth/spawner": "workspace:*",
+    "@sybioth/monitoring": "workspace:*",
+    "@sybioth/efficiency": "workspace:*",
+    "@sybioth/alignment": "workspace:*",
+    "@sybioth/ledger": "workspace:*"
+  },
+  "devDependencies": { "typescript": "^5.7.0", "@types/node": "^22.0.0" },
+  "license": "MIT"
+}

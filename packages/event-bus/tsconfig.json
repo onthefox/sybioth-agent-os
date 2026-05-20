@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "paths": {
+      "@sybioth/types": ["../types/src"],
+      "@sybioth/utils": ["../utils/src"],
+      "@sybioth/logger": ["../logger/src"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../types" },
+    { "path": "../utils" },
+    { "path": "../logger" }
+  ]
+}

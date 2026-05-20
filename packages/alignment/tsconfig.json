@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": { "outDir": "./dist", "rootDir": "./src", "paths": { "@sybioth/event-bus": ["../event-bus/src"] } },
+  "include": ["src/**/*.ts"],
+  "references": [{ "path": "../event-bus" }]
+}

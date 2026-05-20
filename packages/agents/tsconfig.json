@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "paths": {
+      "@sybioth/types": ["../types/src"],
+      "@sybioth/utils": ["../utils/src"],
+      "@sybioth/event-bus": ["../event-bus/src"],
+      "@sybioth/hooks": ["../hooks/src"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../types" },
+    { "path": "../utils" },
+    { "path": "../event-bus" },
+    { "path": "../hooks" }
+  ]
+}
